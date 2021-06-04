@@ -30,6 +30,8 @@ RAM (not GPU memory!) usage. If your RAM is full or close to full, you need to t
    - If even `-tf 1` during preprocessing is not low enough, consider adding a swap partition located on an SSD.
    - upgrade your RAM! (32 GB should get the job done)
 
+3) If it gets stuck after training during evaluation of raw predictions try to continue the same training with `-c` flag, but this time add the `-npz` flag.
+
 
 ## nnU-Net training: RuntimeError: CUDA out of memory
 
